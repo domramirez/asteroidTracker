@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A22A1936218D501E009E962F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1935218D501E009E962F /* AppDelegate.swift */; };
+		A22A1938218D501E009E962F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1937218D501E009E962F /* ViewController.swift */; };
+		A22A193B218D501E009E962F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22A1939218D501E009E962F /* Main.storyboard */; };
+		A22A193D218D5020009E962F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22A193C218D5020009E962F /* Assets.xcassets */; };
+		A22A1940218D5020009E962F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22A193E218D5020009E962F /* LaunchScreen.storyboard */; };
+		A22A194B218D5020009E962F /* AsteroidTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A194A218D5020009E962F /* AsteroidTrackerTests.swift */; };
+		A22A1956218D5E62009E962F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1955218D5E62009E962F /* TableViewCell.swift */; };
+		A22A19582190A352009E962F /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A19572190A352009E962F /* Asteroid.swift */; };
+		A22A195A2190A5CC009E962F /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A19592190A5CC009E962F /* HTTPHandler.swift */; };
+		A22A195C2190A693009E962F /* JSONparser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A195B2190A693009E962F /* JSONparser.swift */; };
+		A22A195E2190A782009E962F /* AsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A195D2190A782009E962F /* AsteroidViewController.swift */; };
+		A22A19602190B21B009E962F /* AsteroidDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A195F2190B21B009E962F /* AsteroidDataProcessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A22A1947218D5020009E962F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22A192A218D501E009E962F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22A1931218D501E009E962F;
+			remoteInfo = AsteroidTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A22A1932218D501E009E962F /* AsteroidTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsteroidTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22A1935218D501E009E962F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A22A1937218D501E009E962F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A22A193A218D501E009E962F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A22A193C218D5020009E962F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A22A193F218D5020009E962F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A22A1941218D5020009E962F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22A1946218D5020009E962F /* AsteroidTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22A194A218D5020009E962F /* AsteroidTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidTrackerTests.swift; sourceTree = "<group>"; };
+		A22A194C218D5020009E962F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22A1955218D5E62009E962F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A22A19572190A352009E962F /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		A22A19592190A5CC009E962F /* HTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
+		A22A195B2190A693009E962F /* JSONparser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONparser.swift; sourceTree = "<group>"; };
+		A22A195D2190A782009E962F /* AsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidViewController.swift; sourceTree = "<group>"; };
+		A22A195F2190B21B009E962F /* AsteroidDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidDataProcessor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A22A192F218D501E009E962F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22A1943218D5020009E962F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A22A1929218D501E009E962F = {
+			isa = PBXGroup;
+			children = (
+				A22A1934218D501E009E962F /* AsteroidTracker */,
+				A22A1949218D5020009E962F /* AsteroidTrackerTests */,
+				A22A1933218D501E009E962F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A22A1933218D501E009E962F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1932218D501E009E962F /* AsteroidTracker.app */,
+				A22A1946218D5020009E962F /* AsteroidTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A22A1934218D501E009E962F /* AsteroidTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A22A195B2190A693009E962F /* JSONparser.swift */,
+				A22A19592190A5CC009E962F /* HTTPHandler.swift */,
+				A22A1935218D501E009E962F /* AppDelegate.swift */,
+				A22A1937218D501E009E962F /* ViewController.swift */,
+				A22A195D2190A782009E962F /* AsteroidViewController.swift */,
+				A22A1939218D501E009E962F /* Main.storyboard */,
+				A22A193C218D5020009E962F /* Assets.xcassets */,
+				A22A193E218D5020009E962F /* LaunchScreen.storyboard */,
+				A22A1941218D5020009E962F /* Info.plist */,
+				A22A1955218D5E62009E962F /* TableViewCell.swift */,
+				A22A19572190A352009E962F /* Asteroid.swift */,
+				A22A195F2190B21B009E962F /* AsteroidDataProcessor.swift */,
+			);
+			path = AsteroidTracker;
+			sourceTree = "<group>";
+		};
+		A22A1949218D5020009E962F /* AsteroidTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A22A194A218D5020009E962F /* AsteroidTrackerTests.swift */,
+				A22A194C218D5020009E962F /* Info.plist */,
+			);
+			path = AsteroidTrackerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A22A1931218D501E009E962F /* AsteroidTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22A194F218D5020009E962F /* Build configuration list for PBXNativeTarget "AsteroidTracker" */;
+			buildPhases = (
+				A22A192E218D501E009E962F /* Sources */,
+				A22A192F218D501E009E962F /* Frameworks */,
+				A22A1930218D501E009E962F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsteroidTracker;
+			productName = AsteroidTracker;
+			productReference = A22A1932218D501E009E962F /* AsteroidTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A22A1945218D5020009E962F /* AsteroidTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22A1952218D5020009E962F /* Build configuration list for PBXNativeTarget "AsteroidTrackerTests" */;
+			buildPhases = (
+				A22A1942218D5020009E962F /* Sources */,
+				A22A1943218D5020009E962F /* Frameworks */,
+				A22A1944218D5020009E962F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A22A1948218D5020009E962F /* PBXTargetDependency */,
+			);
+			name = AsteroidTrackerTests;
+			productName = AsteroidTrackerTests;
+			productReference = A22A1946218D5020009E962F /* AsteroidTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A22A192A218D501E009E962F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Kelly Bauman";
+				TargetAttributes = {
+					A22A1931218D501E009E962F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A22A1945218D5020009E962F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A22A1931218D501E009E962F;
+					};
+				};
+			};
+			buildConfigurationList = A22A192D218D501E009E962F /* Build configuration list for PBXProject "AsteroidTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A22A1929218D501E009E962F;
+			productRefGroup = A22A1933218D501E009E962F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A22A1931218D501E009E962F /* AsteroidTracker */,
+				A22A1945218D5020009E962F /* AsteroidTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A22A1930218D501E009E962F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22A1940218D5020009E962F /* LaunchScreen.storyboard in Resources */,
+				A22A193D218D5020009E962F /* Assets.xcassets in Resources */,
+				A22A193B218D501E009E962F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22A1944218D5020009E962F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A22A192E218D501E009E962F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22A195A2190A5CC009E962F /* HTTPHandler.swift in Sources */,
+				A22A19582190A352009E962F /* Asteroid.swift in Sources */,
+				A22A195E2190A782009E962F /* AsteroidViewController.swift in Sources */,
+				A22A19602190B21B009E962F /* AsteroidDataProcessor.swift in Sources */,
+				A22A195C2190A693009E962F /* JSONparser.swift in Sources */,
+				A22A1956218D5E62009E962F /* TableViewCell.swift in Sources */,
+				A22A1938218D501E009E962F /* ViewController.swift in Sources */,
+				A22A1936218D501E009E962F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22A1942218D5020009E962F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22A194B218D5020009E962F /* AsteroidTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A22A1948218D5020009E962F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22A1931218D501E009E962F /* AsteroidTracker */;
+			targetProxy = A22A1947218D5020009E962F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A22A1939218D501E009E962F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A22A193A218D501E009E962F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A22A193E218D5020009E962F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A22A193F218D5020009E962F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A22A194D218D5020009E962F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A22A194E218D5020009E962F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A22A1950218D5020009E962F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279W7L4BT3;
+				INFOPLIST_FILE = AsteroidTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KellyBauman.com.example.AsteroidTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A22A1951218D5020009E962F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279W7L4BT3;
+				INFOPLIST_FILE = AsteroidTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KellyBauman.com.example.AsteroidTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A22A1953218D5020009E962F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279W7L4BT3;
+				INFOPLIST_FILE = AsteroidTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KellyBauman.com.example.AsteroidTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsteroidTracker.app/AsteroidTracker";
+			};
+			name = Debug;
+		};
+		A22A1954218D5020009E962F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279W7L4BT3;
+				INFOPLIST_FILE = AsteroidTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KellyBauman.com.example.AsteroidTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsteroidTracker.app/AsteroidTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A22A192D218D501E009E962F /* Build configuration list for PBXProject "AsteroidTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22A194D218D5020009E962F /* Debug */,
+				A22A194E218D5020009E962F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A22A194F218D5020009E962F /* Build configuration list for PBXNativeTarget "AsteroidTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22A1950218D5020009E962F /* Debug */,
+				A22A1951218D5020009E962F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A22A1952218D5020009E962F /* Build configuration list for PBXNativeTarget "AsteroidTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22A1953218D5020009E962F /* Debug */,
+				A22A1954218D5020009E962F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A22A192A218D501E009E962F /* Project object */;
+}
